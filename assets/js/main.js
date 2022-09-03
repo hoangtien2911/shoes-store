@@ -6,7 +6,7 @@ const showMenu = (toggleId, navId) => {
 
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
+            nav.classList.toggle('show__menu')
         })
     }
 }
@@ -17,10 +17,24 @@ const removeMenu = (navMenuId, navLinkClass) => {
           navLink = document.querySelectorAll(navLinkClass)
 
     navLink.forEach(n => n.addEventListener('click', () => {
-        navMenu.classList.remove('show')
+        navMenu.classList.remove('show__menu')
     }))
 }
 removeMenu('nav-menu', '.nav__link')
+
+
+/*================= LOGIN SHOW============*/
+const showForm = (loginId, loginFormId) => {
+    const login = document.getElementById(loginId),
+        loginForm = document.getElementById(loginFormId)
+
+    if (login && loginForm) {
+        login.addEventListener('click', () => {
+            loginForm.classList.toggle('show__form')
+        })
+    }
+}
+showForm('nav-login', 'login')
 
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')

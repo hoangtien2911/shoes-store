@@ -34,17 +34,16 @@
                     <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
                     <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
                     <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
-                    <li class="nav__item"><a href="./shop.html" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="./shop.html" class="nav__link">Shop</a></li>                    
                 </ul>
             </div>
             <div class="nav__shop">
                 <i class='bx bx-shopping-bag'></i>
             </div>
-
-            <!-- Theme change button -->            
-            <div class="nav__theme">
-                <i class="bx bx-moon change-theme" id="theme-button"></i>                
+            <div class="nav__login" id="nav-login">
+                Login
             </div>
+            
         </nav>
     </header>
     <main class="l-main">
@@ -301,6 +300,50 @@
                 </form>
             </div>
         </section>
+
+
+        <!-- Login-Register FORM -->
+        <section class="auth-form">
+            <div class="auth-form__overlay" id="login">
+                <div class="auth-form__container bd-grid">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__title">Login</h3>
+                        <span class="auth-form__switch">Sign up</span>                    
+                    </div>
+    
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Your email">                    
+                            <input type="password" class="auth-form__input" placeholder="Your password">
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="button">LOG IN</button>
+                        </div>
+    
+                        <div class="auth-form__help">
+                            <a href="#" class="auth-form__link">Forgot password?</a>
+                            <a href="#" class="auth-form__link">Need to help.</a>
+                        </div>
+                        
+                        <div class="auth-form__socials">
+                            <h3 class="auth-form__socials-title">OR</h3>
+                            <div class="auth-form__socials-body">
+                                <div class="auth-form__socials-button button">                            
+                                    FACEBOOK
+                                    <i class='bx bxl-facebook auth-form__icon' ></i>
+                                </div>
+                                <div class="auth-form__socials-button button">
+                                    GOOGLE
+                                    <i class='bx bxl-google auth-form__icon' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!--===== FOOTER =====-->
@@ -351,6 +394,11 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class='bx bx-up-arrow-alt'></i>
         </a>
+
+        <!-- Theme change button -->            
+        <div class="nav__theme">
+            <i class="bx bx-moon change-theme" id="theme-button"></i>                
+        </div>
     </footer>
 
     <!--===== MAIN JS =====-->
