@@ -52,7 +52,9 @@
 }
 
 /*===== BASE =====*/
-*,::before,::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -100,7 +102,7 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 768px) {
-  .dark-theme .nav__list{
+  .dark-theme .nav__list {
     background-color: var(--dark-color-lighten) !important;
   }
 }
@@ -130,18 +132,23 @@ body.dark-theme {
 .dark-theme .newsletter__description {
   color: var(--dark-color);
 }
+
 .dark-theme .newsletter__container {
   background-color: var(--dark-color-lighten);
 }
 
 .dark-theme .scrollup {
-  background-color: var(--dark-color);  
+  background-color: var(--dark-color);
   color: var(--white-color);
 }
 
 .dark-theme .nav__theme {
   background-color: var(--dark-color);
   color: var(--white-color);
+}
+
+.dark-theme .auth-form__close {
+  color: var(--dark-color);
 }
 
 .dark-theme .auth-form__title,
@@ -165,9 +172,14 @@ body.dark-theme {
 .dark-theme .auth-form__switch {
   color: var(--dark-color);
 }
+
 /* ======================== */
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
 }
 
@@ -186,6 +198,7 @@ img {
   height: auto;
   display: block;
 }
+
 /*===== CLASS CSS ===== */
 .section {
   padding: 5rem 0 2rem;
@@ -210,6 +223,7 @@ img {
   margin: auto;
   background-color: var(--dark-color);
 }
+
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -235,19 +249,19 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    top: var(--header-height);    
+    top: var(--header-height);
     left: -100%;
     width: 70%;
     height: 100vh;
     padding: 2rem;
     background-color: var(--white-color);
-    transition: 0.5s;    
+    transition: 0.5s;
   }
 }
 
@@ -259,7 +273,10 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
-.nav__toggle, .nav__shop, .nav__theme, .nav__login {
+.nav__toggle,
+.nav__shop,
+.nav__theme,
+.nav__login {
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -298,8 +315,9 @@ img {
   width: 4px;
   height: 4px;
   background-color: var(--dark-color);
-  border-radius: 50%;  
+  border-radius: 50%;
 }
+
 /*Change color header*/
 .scroll-header {
   background-color: var(--white-color);
@@ -320,7 +338,7 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .home__shape {
@@ -342,16 +360,18 @@ img {
   display: block;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-2);  
+  margin-bottom: var(--mb-2);
 }
 
 .home__title {
   font-size: var(--bigger-font-size);
   margin-bottom: var(--mb-1);
 }
+
 .home__description {
   margin-bottom: var(--mb-6);
 }
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -362,6 +382,7 @@ img {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
+
 .button:hover {
   transform: translateY(-0.25rem);
 }
@@ -373,14 +394,14 @@ img {
   align-items: center;
 }
 
-.button-light:hover .button-icon{
+.button-light:hover .button-icon {
   transform: translateX(0.25rem);
 }
 
 .button-icon {
   font-size: 1.25rem;
   margin-left: var(--mb-1);
-  transition: 0.3s;  
+  transition: 0.3s;
 }
 
 /*===== FEATURED =====*/
@@ -431,7 +452,7 @@ img {
 }
 
 .sneaker__price {
-  margin-bottom: var(--mb-3);  
+  margin-bottom: var(--mb-3);
 }
 
 .sneaker:hover {
@@ -453,6 +474,7 @@ img {
   background-color: var(--dark-color);
   color: var(--white-color);
 }
+
 /*===== COLLECTION =====*/
 .collection__container {
   row-gap: 2rem;
@@ -492,6 +514,7 @@ img {
 .collection__card:hover {
   transform: translateY(-0.5rem);
 }
+
 /*===== WOMEN SNEAKERS =====*/
 .women__container {
   row-gap: 2rem;
@@ -523,6 +546,7 @@ img {
 .offer__img {
   width: 153px;
 }
+
 /*===== NEW COLLECTION  =====*/
 .new__container {
   row-gap: 2rem;
@@ -553,7 +577,7 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.new__sneaker-list{
+.new__sneaker-list {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -568,10 +592,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}  
+}
 
 .new__sneaker-img {
-  width: 220px;  
+  width: 220px;
 }
 
 .new__sneaker-overlay {
@@ -584,15 +608,16 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgba(138, 138, 138, 0.3);
-  transition: 0.3s;  
+  transition: 0.3s;
 }
 
 .new__sneaker-card:hover .new__sneaker-overlay {
   bottom: 0;
 }
+
 /*========BRAND======== */
 .brand__container {
-  column-gap: 2rem;  
+  column-gap: 2rem;
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
 }
@@ -644,6 +669,7 @@ img {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
 }
+
 /*===== FOOTER =====*/
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -692,21 +718,32 @@ img {
 
 .show-scroll {
   bottom: 7rem;
-} 
+}
 
- /* Login-Register FORM  */
+/* Login-Register FORM  */
 
- .auth-form {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    /* animation: fadeIn linear 0.1s; */
- }
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
- .auth-form__overlay {
+  to {
+    opacity: 1;
+  }
+}
+
+.auth-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  animation: fadeIn linear 0.1s;
+}
+
+.auth-form__overlay {
   position: absolute;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -719,15 +756,26 @@ img {
   background-color: var(--dark-color-light);
   border-radius: 0.25rem;
   width: 360px;
-  height: 350px;  
-  margin-top: 15rem;    
+  height: 380px;
+  margin-top: 15rem;
+}
+
+.auth-form__close {
+  margin-left: 20rem;
+  margin-top: 1rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.auth-form__close i {
+  font-size: var(--big-font-size);
 }
 
 .auth-form__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 .auth-form__title {
@@ -770,8 +818,8 @@ img {
 }
 
 .auth-form__controls button {
-  font-weight: var(--font-bold); 
-  padding: 0.8rem 2rem; 
+  font-weight: var(--font-bold);
+  padding: 0.8rem 2rem;
   font-size: var(--normal-font-size);
 }
 
@@ -780,6 +828,7 @@ img {
   justify-content: space-between;
   margin: 0.4rem 3rem;
 }
+
 .auth-form__help a {
   cursor: pointer;
   color: var(--dark-color-lighten);
@@ -798,9 +847,9 @@ img {
   margin: 0.5rem 2rem;
 }
 
-.auth-form__socials-button {  
+.auth-form__socials-button {
   width: 140px;
-  padding: 0.4rem 1rem 0.6rem; 
+  padding: 0.4rem 1rem 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,20 +869,107 @@ img {
 .auth-form__socials-button {
   background-color: hsl(220, 18%, 23%);
 }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 340px) {
   .brand__container {
     grid-template-columns: repeat(2, 100px);
   }
+
+  .auth-form__container {
+    width: 260px;
+    height: 290px;
+    margin: 12rem 0.6rem;
+  }
+
+  .auth-form__close {
+    margin-left: 14rem;
+    height: 30px;
+  }
+
+  .auth-form__header {
+    margin-bottom: 0.4rem;
+  }
+
+  .auth-form__title {
+    font-size: var(--big-font-size);    
+  }
+
+  .auth-form__input {
+    width: 200px;
+    height: 28px;
+  }
+
+  .auth-form__input {
+    font-size: var(--smaller-font-size);
+  }
+
+  .auth-form__controls {
+    margin-right: 2rem;    
+  }
+
+  .auth-form__controls button {
+    padding: 0.4rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: var(--font-bold);
+  }
+
+  .auth-form__help {
+    font-size: var(--smaller-font-size);
+    margin: 0rem 1.5rem;
+  }
+
+  .auth-form__socials-body {
+    margin: 0rem 0.8rem;
+  }
+
+  .auth-form__socials-title {
+    font-size: var(--normal-font-size);
+  }
+
+  .auth-form__socials-button {
+    width: 100px;
+    padding: 0.2rem 0.5rem 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--smaller-font-size);
+  }
+
+  .auth-form__icon {
+    font-size: var(--normal-font-size);
+    margin-left: 0.2rem;
+  }
+  
 }
 
 @media screen and (min-width: 340px) {
   .home__img {
-    top: 6.5rem;
+    top: 3.5rem;
   }
+
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .auth-form__container {
+    margin-top: 7rem;
+  }  
+}
+
+@media screen and (min-width: 390px) {
+  .home__img {
+    top: 6.5rem;
+  }
+
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .auth-form__container {
+    margin-top: 16rem;
   }
 }
 
@@ -870,7 +1006,7 @@ img {
   }
 
   .section {
-    padding: 3rem 0 3rem;    
+    padding: 3rem 0 3rem;
   }
 
   .section-title::after {
@@ -908,6 +1044,7 @@ img {
   .home__sneaker {
     order: 1;
   }
+
   .home__shape {
     width: 376px;
     height: 376px;
@@ -932,7 +1069,7 @@ img {
     align-items: center;
     padding: 4.5rem 2rem;
   }
-  
+
   .newsletter__description {
     margin-bottom: 0;
   }
@@ -952,7 +1089,7 @@ img {
     grid-template-columns: repeat(2, 415px);
   }
 
-  .new__sneaker-list{
+  .new__sneaker-list {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

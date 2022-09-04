@@ -22,19 +22,28 @@ const removeMenu = (navMenuId, navLinkClass) => {
 }
 removeMenu('nav-menu', '.nav__link')
 
-
 /*================= LOGIN SHOW============*/
-const showForm = (loginId, loginFormId) => {
+const showForm = (loginId, loginFormId, showForm) => {
     const login = document.getElementById(loginId),
         loginForm = document.getElementById(loginFormId)
 
     if (login && loginForm) {
         login.addEventListener('click', () => {
-            loginForm.classList.toggle('show__form')
+            loginForm.classList.toggle(showForm)
         })
     }
 }
-showForm('nav-login', 'login')
+showForm('nav-login', 'login', 'show__form')
+
+const removeForm = (loginFormId, closeClass, removeForm) => {
+    const loginForm = document.getElementById(loginFormId),
+          close = document.querySelectorAll(closeClass)
+
+    close.forEach(n => n.addEventListener('click', () => {
+        loginForm.classList.remove(removeForm)
+    }))
+}
+removeForm('login', '.auth-form__close', 'show__form')
 
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
